@@ -1,0 +1,43 @@
+✅ 1. Clone your GitHub Repo (only first time)
+bash
+Copy
+Edit
+git clone https://github.com/k-suriya-official1/DSA.git
+cd DSA
+✅ 2. Create Day Folder and Add File
+bash
+Copy
+Edit
+mkdir Day1_Two_Sum
+➡️ Save your Java file (e.g., TwoSumBruteForce.java) inside Day1_Two_Sum folder.
+
+✅ 3. Stage, Commit, and Push
+bash
+Copy
+Edit
+git add .
+git commit -m "Day 1: Added Two Sum brute force solution inside Day1_Two_Sum folder"
+git push -u origin main
+✅ 4. Next Day Repeat ➡️ Day 2, Day 3...
+bash
+Copy
+Edit
+mkdir Day2_ProblemName
+# (Save your file inside new folder)
+
+git add .
+git commit -m "Day 2: Added ProblemName solution"
+git push
+✅ Branch Check (Optional)
+bash
+Copy
+Edit
+git branch
+➡️ Make sure you are on main branch, not master.
+
+Now you will always:
+
+Keep each day's problem in separate folders (Day1, Day2, Day3…)
+
+Push everything to the same main branch correctly.
+
