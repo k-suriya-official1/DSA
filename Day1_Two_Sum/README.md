@@ -85,6 +85,85 @@ class Solution {
     }
 }
 ```
+✅ Step-by-Step Explanation
+Let’s take:
+
+java
+Copy
+Edit
+nums = [2,7,11,15], target = 9
+🔄 Loop Walkthrough:
+Step (i)	nums[i]	complement (target - nums[i])	map before	map after	Found Pair?
+0	2	7	{}	{2:0}	❌ No
+1	7	2	{2:0}	Return [0,1] ✅	✅ Yes! Found!
+
+✅ At i = 1:
+complement = 9 - 7 = 2
+
+map.containsKey(2) ➔ ✅ True
+
+We earlier stored 2 at index 0.
+
+🔥 So this line runs:
+java
+Copy
+Edit
+return new int[] { map.get(complement), i };
+map.get(2) ➔ returns 0
+
+i ➔ is 1
+
+✔️ So it returns [0, 1] ➔ which is the correct answer.
+
+✅ Deep Meaning of this Return Line
+java
+Copy
+Edit
+return new int[] { map.get(complement), i };
+📦 "Give me the earlier index where I saw the complement ➕ my current index. That’s my answer!"
+
+✔️ So we return the pair of indices [index_of_complement, current_index].
+
+✅ Why HashMap Makes it Fast (O(n))
+HashMap gives O(1) lookup.
+
+So, in one single loop:
+
+We check if complement exists ➔ O(1)
+
+We add current number to map ➔ O(1)
+
+✔️ Overall ➔ O(n) time ➔ fast and efficient!
+
+✅ Visual Diagram of Map Building
+text
+Copy
+Edit
+Initial map: {}
+
+i = 0 ➔ nums[0] = 2 ➔ complement = 7
+- Map doesn't have 7 ➔ put 2 ➔ map becomes {2:0}
+
+i = 1 ➔ nums[1] = 7 ➔ complement = 2
+- Map has 2 ➔ Found pair!
+- Return [map.get(2), 1] ➔ [0, 1]
+✅ Final Takeaways:
+Use HashMap to store ➔ num ➔ index
+
+For each number ➔ check if its complement is already stored.
+
+If found ➔ return the pair of indices immediately.
+
+Time Complexity ➔ O(n) ✅
+
+Space Complexity ➔ O(n) (because we store elements in map)
+
+🎯 DSA Concepts You Practiced Here:
+Concept	Used in this Solution?
+HashMap	✅ Yes
+Complement Logic	✅ Yes
+Single-pass loop	✅ Yes
+Time O(n), Space O(n)	✅ Yes
 
 **Time Complexity**: O(n) - We only need to iterate through the array once.
 **Space Complexity**: O(n) - In the worst case, we might need to store all elements in the HashMap.
