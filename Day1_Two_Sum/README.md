@@ -253,6 +253,24 @@ For the input array `[2, 7, 11, 15]` with target `9`:
    - return [map.get(2), 1] which is [0, 1]
 
 This demonstrates the efficiency of using HashMap for lookups - we found our answer in just 2 steps!
+#✅ Example: Amazon Gift Card Matching
+🎯 User Goal: "I have ₹1000 gift card, show me 2 items whose total is exactly ₹1000"
+
+Behind the scenes:
+
+All product prices ➔ become your nums[]
+
+Gift card amount ➔ is your target
+
+System uses Two Sum logic to check pairs:
+
+java
+Copy
+Edit
+if (price1 + price2 == giftCardAmount) {
+    showPair(price1, price2);
+}
+#✔️ This is a direct real-world application of Two Sum!
 
 
 
