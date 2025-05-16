@@ -357,3 +357,7 @@ def findMedianSortedArrays(nums1, nums2):
 4. Verify with manual calculations
 
 This problem is considered one of the most challenging binary search problems because it requires thinking about binary search in a non-traditional way - searching for the correct partition rather than a specific value.
+## References
+
+- [Median of Two Sorted Arrays on LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/?envType=problem-list-v2&envId=array)
+- [Median of Two Sorted Arrays: 4 array interview @ google, apple, amazon, meta, microsoft, tiktok, tcs](https://youtu.be/LRM4qiHLYCE?si=XbEFUW3rzp8fz7Uy)
