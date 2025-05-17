@@ -40,4 +40,22 @@ Now you will always:
 Keep each day's problem in separate folders (Day1, Day2, Day3…)
 
 Push everything to the same main branch correctly.
+To https://github.com/k-suriya-official1/DSA.git
+ ! [rejected]        main -> main (fetch first)    
+error: failed to push some refs to 'https://github.com/k-suriya-official1/DSA.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+git pull origin main --rebase
+
+git push origin main
+
+warning: in the working copy of 'github/git code.txt', CRLF will be replaced by LF the next time Git touches it
+
+git config --global core.autocrlf true
+
 
