@@ -200,3 +200,7 @@ The algorithm uses constant extra space regardless of input size.
 
 ## Summary
 The Container With Most Water problem demonstrates how a clever algorithmic insight can reduce a seemingly O(n²) problem to O(n). The two-pointer approach leverages the following intuition: when limited by the shorter line, try to find a taller line to potentially increase the area. This approach eliminates suboptimal solutions without having to calculate their areas explicitly.
+## References
+
+- [container-with-most-water on LeetCode](https://leetcode.com/problems/container-with-most-water/description/?envType=problem-list-v2&envId=array)
+- [Container With Maximum Water (LeetCode 11) | Full Solution with Visuals | Study Algorithms](https://youtu.be/w7ftYsZtIbs?si=fFLNJ8UUzqAQhLUK)
