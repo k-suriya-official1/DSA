@@ -493,6 +493,10 @@ The technique generalizes to kSum problems:
   - Overall: O(n log n + n²) = O(n²)
 - **Space Complexity**: O(1) excluding the output space
   - O(n) if including result storage
+## References
+
+- [3sum on LeetCode](https://leetcode.com/problems/3sum/)
+- [3 Sum (LeetCode 15) | Full solution with examples and visuals | Interview Essential](https://youtu.be/cRBSOz49fQk?si=sbnzzEdZ4_4uJ4T7)
 
 ## Conclusion
 The 3Sum problem demonstrates the power of technique adaptation and problem reduction. By transforming a seemingly complex problem into a series of simpler ones, we create an elegant and efficient solution. This problem provides excellent practice for array manipulation, pointer management, and deduplication strategies that are applicable across many algorithmic challenges.
