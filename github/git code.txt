@@ -59,3 +59,9 @@ warning: in the working copy of 'github/git code.txt', CRLF will be replaced by 
 git config --global core.autocrlf true
 
 
+2. Initialize Git
+
+git init
+
+
+git remote add origin https://github.com/your-username/my-first-project.git
